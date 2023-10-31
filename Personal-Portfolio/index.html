@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabeh Shaikh - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfa522182d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/sabe_shaikh-removebg-preview (1).png" height="85" class="logo" />
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I am <span> Sabeh </span> <br> Shaikh From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------about------- -->
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/mypic (1).jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a dedicated Front-End Developer, driven by the passion to create user-centric and visually
+                        captivating websites. My core skills include HTML, CSS, and JavaScript, with a strong focus on
+                        enhancing user experiences. Currently, I'm mastering React JS for dynamic and interactive
+                        interfaces. I'm also actively expanding my expertise in full-stack development, exploring
+                        Node.js to build efficient web applications. Committed to pushing the boundaries of web
+                        development for outstanding digital experiences.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Front-End Development</span><br>Web/App Development</li>
+                                <li><span>Responsive Web Design</span><br>Creating mobile-friendly websites</li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer Intern</span> <br> Saylani Mass IT Training <span>(2023 -
+                                    Present)</span></li>
+                            <li><span>Remote Web/App Developer Intern</span> <br> CodeSoft <span>(Sept 20 - Oct 20,
+                                    2023)</span></li>
+                            <li><span>Remote Web Developer Intern</span> <br> TechnoHacks <span>(Oct 1 - Oct 30,
+                                    2023)</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Federal Urdu University of Arts, Sciences & Technology</span><br>Bachelor of
+                                Computer Science (BSCS) <span>(2023 - Present)</span></li>
+                            <li><span>Saylani Mass IT Training</span><br>MERN Stack Web Development <span>(2022 -
+                                    Present)</span></li>
+                            <li><span>Fazaia Degree College Faisal</span><br>Pre-Engineering <span>(2020 - 2022)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- services --------------->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually stunning and functional websites is my passion. I specialize in crafting
+                        engaging web designs that captivate users and provide an exceptional online experience.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>User-centered design is at the heart of my work. I focus on optimizing user experiences through
+                        intuitive interfaces, ensuring users can easily navigate and enjoy your website.</p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Responsive Web Design</h2>
+                    <p>I specialize in creating websites that adapt seamlessly to various devices. Whether on a desktop,
+                        tablet, or smartphone, your site will provide a consistent and user-friendly experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------- Portfolio ------------->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/weatherapp (1).jpg" />
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Stay updated with the latest weather information, so you can plan your day with confidence.
+                        </p>
+                        <a href="https://weatherappsabeh.netlify.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/quiz-app.jpeg" />
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p> Test your knowledge with fun quizzes and challenges, and challenge your friends to see who's
+                            the smartest.</p>
+                        <a href="https://quizappsabeh.netlify.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/currencyconvo.jpg" />
+                    <div class="layer">
+                        <h3>Currency Convertor App</h3>
+                        <p>Easily convert currencies with this user-friendly app, ensuring you get the best rates for
+                            your international transactions.</p>
+                        <a href="https://exchangeratebysabeh.netlify.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- 
+            <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+
+    <!-------- Contact ---------->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sabehshaikh201@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Sabeh420/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/shaikh_sabeh"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sabeh-shaikh-016623245/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SabehShaikh"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Sabeh Shaikh Resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Sabeh Shaikh <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
